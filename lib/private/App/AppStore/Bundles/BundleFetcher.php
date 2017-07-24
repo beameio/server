@@ -69,8 +69,8 @@ class BundleFetcher {
 			$this->getBundles(),
 			$this->getDefaultInstallationBundle()
 		);
-		foreach($bundles as $bundle) {
-			if($bundle->getIdentifier() === $identifier) {
+		foreach ($bundles as $bundle) {
+			if ($bundle->getIdentifier() === $identifier) {
 				return $bundle;
 			}
 		}
